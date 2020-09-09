@@ -1,0 +1,40 @@
+       body {
+            height: 100vh;
+            padding-top: 30px;
+        }
+
+        .box {
+            border: 5px solid crimson;
+            border-top-color: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: circles 1s ease-in-out infinite forwards;
+            display: none;
+
+        }
+
+        @keyframes circles {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        #surround {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.3);
+            top: 0%;
+            bottom: 0%;
+            right: 0%;
+            left: 0%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            display: none;
+        }
