@@ -2,12 +2,13 @@ new Vue({
     el: "#root",
     data: {
         showCover: false,
+        enterDetails: true,
     },
     methods: {
         runIt: function (e) {
             e.preventDefault();
             this.showCover = true;
-            // box.style.display = "block";
+            this.enterDetails = false;
             setTimeout(() => {
                 this.showCover = false
             }, this.random());
