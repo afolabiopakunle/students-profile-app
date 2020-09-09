@@ -7,8 +7,8 @@ new Vue({
     methods: {
         runIt: function (e) {
             e.preventDefault();
-            this.showCover = true;
-            this.enterDetails = false;
+            this.showCover = !this.showCover;
+            this.enterDetails = !this.enterDetails;
             setTimeout(() => {
                 this.showCover = false
             }, this.random());
